@@ -11,9 +11,9 @@
 		
 	</parent>
 	<groupId>com.connect.api.two.db</groupId>
-	<artifactId>Connect-Two-DB</artifactId>
+	<artifactId>connect-two-db</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Connect-Two-DB</name>
+	<name>connect-two-db</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
