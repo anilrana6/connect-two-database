@@ -1,17 +1,18 @@
 version: 0.2
 
-phasese:
-   build:
-     command:
-        -echo Entered the build phase...
-        -mvn clean package
-      
-   post_build:
-     commands:
-       -echo Build completed succesfulluy.
-      
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  build:
+    commands:
+      - echo Build started on succesfully
+      #- mvn test 
+  post_build:
+    commands:
+      - echo Build completed on succesfully
+      - mvn package
 artifacts:
-  files: 
-   -target/connect-two-db.jar
-  discard-paths: yes 
-            
+  files:
+    - target/connect-two-db.jar
+  discard-paths: yes
